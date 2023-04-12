@@ -17,6 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 62px;
+  padding-top: 69px;
+  padding-bottom: 69px;
   border-radius: 60px;
   background-color: #ffffff;
 }
@@ -25,7 +27,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 13px;
-  margin: 69px 30px 0px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .faq-header__title {
@@ -45,6 +48,28 @@ body {
   line-height: 180%;
   text-align: center;
   color: #000000;
+}
+
+.faq-header__searchbox {
+  position: relative;
+}
+
+.faq-header__search__input {
+  width: 100%;
+  padding: 15px 33px;
+  border-radius: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+} 
+
+.faq-header__search__icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 30px;
+  top: 18px;
 }
 
 .faq-header__links {
@@ -76,7 +101,7 @@ body {
 .faq-item__index {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 22px;
   width: 100%;
   padding: 22px;
   border-radius: 20px;
@@ -139,8 +164,6 @@ body {
   background-color: #ddefff;
   box-shadow: -4px 4px 4px 4px rgba(0, 60, 132, 0.05);
 }
-
-
 
 @media (min-width: 768px) {
   .faq-container {
@@ -207,7 +230,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex: 0 0 200px;
-    
+
     padding: 10px 10px 10px 24px;
     border-radius: 15px;
   }
